@@ -15,7 +15,7 @@ from requests import get
 import wikipedia
 import antispam
 logging.basicConfig(level=logging.DEBUG)
-api_id=os.environ['API_KEY']
+api_id=os.environ['217790']
 global SPAM
 SPAM=False
 global ISAFK
@@ -26,7 +26,7 @@ global USERS
 USERS={}
 global COUNT_MSG
 COUNT_MSG=0
-api_hash=os.environ['API_HASH']
+api_hash=os.environ['b69bd04d4eb99526c6ca18157273dd01']
 WIDE_MAP = dict((i, i + 0xFEE0) for i in range(0x21, 0x7F))
 WIDE_MAP[0x20] = 0x3000
 client = TelegramClient('session_name', api_id, api_hash).start()
